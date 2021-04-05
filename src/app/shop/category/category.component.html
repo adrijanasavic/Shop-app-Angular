@@ -1,0 +1,8 @@
+<div class="row">
+    <div class="col-md-3 col-sm-6 g-font-size-12 category-product-div" *ngFor="let product of products" (click)="openProductDetails(product)">
+        <div class="category-product-img" [style.background-image]="'url(' + product.imgSrc + ')'"></div>
+        <p class="category-product-name"><strong>{{product.name}}</strong></p>
+        <p *ngIf="product.oldPrice == 0" class="category-product-price">RSD{{product.price}},00</p>
+        <p *ngIf="product.oldPrice != 0" class="category-product-price"><span class="category-product-old-price">RSD{{product.oldPrice}},00</span> RSD{{product.price}},00</p>
+    </div>
+</div>

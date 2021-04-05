@@ -8,6 +8,11 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SocialSidebarComponent } from './social-sidebar/social-sidebar.component';
 import { AboutComponent } from './about/about.component';
+import { ShopComponent } from './shop/shop.component';
+import { CategoryComponent } from './shop/category/category.component';
+import { ProductComponent } from './shop/category/product/product.component';
+import { ShopService } from './shared/services/shop.service';
+import { MatSnackBarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -15,14 +20,18 @@ import { AboutComponent } from './about/about.component';
     HeaderComponent,
     HomeComponent,
     SocialSidebarComponent,
-    AboutComponent
+    AboutComponent,
+    ShopComponent,
+    CategoryComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSnackBarModule
   ],
-  providers: [],
+  providers: [ShopService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

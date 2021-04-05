@@ -1,0 +1,19 @@
+<div class="container g-m-t-15px">
+    <div class="row">
+        <div class="col-lg-3 d-flex justify-content-end" id="shop_categories_div">
+            <div class="shop-categories-div">
+                <div class="shop-category-title">
+                    Categories:
+                </div>
+                <div *ngFor="let category of categories" class="shop-category">
+                    <a [routerLink]="['/shop', category.id, category.name]" class="text-decoration-none text-dark">{{category.name}}</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
+<app-social-sidebar></app-social-sidebar>
