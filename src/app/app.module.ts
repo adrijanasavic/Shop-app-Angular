@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SocialSidebarComponent } from './social-sidebar/social-sidebar.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    SocialSidebarComponent
+    SocialSidebarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
