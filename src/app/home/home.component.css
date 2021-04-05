@@ -1,0 +1,225 @@
+.home_first-div {
+    background: url('../../assets/livingRoom.jpg');
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position: 0 -382px;
+    min-height: 500px;
+    background-size: cover;
+}
+
+#home_first_div_title1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#home_first_div_title2 {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+#home_first_div_button {
+    background-color: #343a40;
+    color: white;
+    padding: 7px 30px;
+}
+
+#home_load_more_btn {
+    background-color: transparent;
+    border: 1px solid #343a40;
+    padding: 7px 70px;
+    margin-top: 20px;
+}
+
+#home_product_img1 {
+    background: url('../../assets/nighttable.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -290px;
+    height: 200px;
+    background-size: cover;
+}
+
+#home_product_img2 {
+    background: url('../../assets/radniSto.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -87px;
+    height: 200px;
+    background-size: cover;
+}
+
+#home_product_img3 {
+    background: url('../../assets/krevet.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -33px;
+    height: 200px;
+    background-size: cover;
+}
+
+#home_product_img4 {
+    background: url('../../assets/stolica_sto.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -36px;
+    height: 200px;
+    background-size: cover;
+}
+
+#home_product_img5 {
+    background: url('../../assets/kitchen.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -31px;
+    height: 200px;
+    background-size: cover;
+}
+
+#home_product_img6 {
+    background: url('../../assets/bedRoom.jpg');
+    background-repeat: no-repeat;
+    background-position: 0 -33px;
+    height: 200px;
+    background-size: cover;
+}
+
+.home-product-img {
+    margin-top: 15px;
+}
+
+.home-product-img-title {
+    margin-top: 10px;
+}
+
+.home-text-part {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.home-product-img-watermak {
+    color: white;
+    background-color: black;
+    width: 85px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+
+/*FORM*/
+
+#home_contact_form input,
+#home_contact_form textarea {
+    border: none;
+    border-bottom: 2px solid #343a40;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+#home_contact_form textarea {
+    min-height: 30px;
+    max-height: 120px;
+}
+
+#home_subscribe_form input {
+    border: 2px solid #343a40;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+}
+
+#home_subscribe_now_btn {
+    height: 28px;
+    background-color: #343a40;
+    color: white;
+}
+
+#home_contact_form_btn {
+    background-color: transparent;
+    border: none;
+    padding: 7px 70px;
+    margin-top: 20px;
+}
+
+#home_map {
+    border: 0;
+    width: 100%;
+    right: 0px;
+    left: 0px;
+}
+
+@media(max-width: 1366px) {
+    .home_first-div {
+        background-position: 0 -277px;
+    }
+}
+
+@media(max-width: 1199px) {
+    #home_product_img1 {
+        background-position: 0 -233px;
+    }
+    #home_product_img2 {
+        background-position: 0 -44px;
+    }
+    #home_product_img3,
+    #home_product_img5,
+    #home_product_img6 {
+        background-position: 0 0px;
+    }
+    #home_product_img4 {
+        background-position: 0 -13px;
+    }
+    .home_first-div {
+        background-position: 0 -142px;
+    }
+}
+
+@media(max-width: 991px) {
+    #home_product_img1 {
+        background-position: 0 -115px;
+    }
+    #home_product_img2,
+    #home_product_img3,
+    #home_product_img4,
+    #home_product_img5,
+    #home_product_img6 {
+        background-position: 0 0px;
+    }
+    .home_first-div {
+        background-position: 0 0px;
+    }
+}
+
+@media(max-width:767px) {
+    #home_product_img1 {
+        height: 300px;
+        background-position: 0 -427px;
+    }
+    #home_product_img2,
+    #home_product_img3,
+    #home_product_img4,
+    #home_product_img5,
+    #home_product_img6 {
+        height: 300px;
+        background-position: 0 -39px;
+    }
+}
+
+@media(max-width:575px) {
+    #home_product_img1 {
+        background-position: 0 -179px;
+    }
+    #home_product_img2,
+    #home_product_img3,
+    #home_product_img4,
+    #home_product_img5,
+    #home_product_img6 {
+        background-position: 0 0px;
+    }
+    .home_first-div {
+        background-position: -65px 0px;
+    }
+    .home-text-part {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #home-subscribe-now-btn {
+        margin-top: 15px;
+    }
+}
