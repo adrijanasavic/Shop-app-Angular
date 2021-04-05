@@ -1,0 +1,26 @@
+.border-none {
+    border: none;
+}
+
+.cart-img {
+    border: 1px solid #909090;
+    width: 100px;
+}
+
+.cart-product-name {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart-remove-btn {
+    text-decoration: underline;
+}
+
+.cart-product-quantity {
+    border: 1px solid black;
+    padding: 3px 12px;
+}
+
+.cart-location {
+    text-decoration: underline;
+}

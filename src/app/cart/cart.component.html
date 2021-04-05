@@ -1,0 +1,61 @@
+<div class="container g-m-t-30px">
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive">
+                <table class="table g-font-size-12" id="cart_table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="border-none">My Cart ({{cartProducts.length}})</th>
+                            <th scope="col" class="border-none">Price</th>
+                            <th scope="col" class="border-none">Qty</th>
+                            <th scope="col" class="text-right border-none">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let product of cartProducts">
+                            <td>
+                                <div class="d-flex justify-content-start">
+                                    <div>
+                                        <img [src]="product.imgSrc" class="cart-img" [alt]="product.name">
+                                    </div>
+                                    <div class="cart-product-name">
+                                        {{product.name}} <br><br>
+                                        <span class="cart-remove-btn" (click)="removeProductFromCart(product.id)">Remove</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>RSD{{product.price}},00</td>
+                            <td><span class="cart-product-quantity">{{product.quantity}}</span></td>
+                            <td class="text-right">RSD{{product.price*product.quantity}},00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">
+                                Subtotal
+                            </td>
+                            <td class="text-right">RSD{{subtotal}},00</td>
+                        </tr>
+                        <tr>
+                            <td class="border-none"></td>
+                            <td colspan="2" class="border-none">Shipping<br><span class="cart-location">Novi Sad, Serbia</span></td>
+                            <td class="border-none text-right">FREE</td>
+                        </tr>
+                        <tr>
+                            <td class="border-none"></td>
+                            <td class="g-font-size-16px">Total</td>
+                            <td colspan="2" class="text-right g-font-size-16px">RSD{{subtotal}},00</td>
+                        </tr>
+                        <tr>
+                            <td class="border-none"></td>
+                            <td colspan="3">
+                                <button class="btn btn-dark btn-sm g-font-size-12 w-100"><i class="fa fa-lock" aria-hidden="true"></i>  Checkout</button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

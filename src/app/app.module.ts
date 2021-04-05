@@ -13,6 +13,7 @@ import { CategoryComponent } from './shop/category/category.component';
 import { ProductComponent } from './shop/category/product/product.component';
 import { ShopService } from './shared/services/shop.service';
 import { MatSnackBarModule } from '@angular/material';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatSnackBarModule } from '@angular/material';
     AboutComponent,
     ShopComponent,
     CategoryComponent,
-    ProductComponent
+    ProductComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
